@@ -1,10 +1,19 @@
 
 function nameForAge(age) {
-    if (age < 2) return 'baby'
-    if ((age > 2) && (age < 12)) return 'child'
-    if (age > 20) return 'twenty somthing'
-    if ((age > 30) && (age < 40)) return 'thirty something'
-    if (age > 40) return 'almost grown up'
+    addTextToPage('Starting name for age with value ' + age)
+    if (age <= 0) return 'not born yet'
+    addTextToPage('We can\'t wait for them to walk and talk!')
+    if (age <= 2) return 'baby'
+    addTextToPage('Oh, if only they would sit down and be quiet?!')
+    if (age < 13) return 'child'
+    addTextToPage('Oh... a teenager')
+    if (age < 20) return 'teenager'
+    addTextToPage('Getting out in the world...')
+    if (age < 30) return 'twenty something'
+    addTextToPage('With experience comes wisdom... sometimes')
+    if (age < 40) return 'thirty something'
+    if (age < 110) return 'almost grown up'
+    return "well done! You old."
 }
 
 addTextToPage('Age-name-o-matic!')
